@@ -1,0 +1,837 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/victo/ontologies/2020/2/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/victo/ontologies/2020/2/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/victo/ontologies/2020/2/untitled-ontology-4"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Available"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Class"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Games"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organizator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Party"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Popular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sponsored"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ticket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Town"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unavailable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Village"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volunteering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food&amp;Drink"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ChecksTickets"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#GoesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasClass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LocatedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#OrganizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#VisitedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventTicketPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EventTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LocationName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#OrganizatorName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#VisitorName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alexis_Evans"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alisher_Morgenstern"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dewsberry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drake_Night"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Football_Game"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harry_Huston"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Huddersfield"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jack_Russel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leeds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Manchester"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movie_Night"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Neverland2020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NightClub_Party"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oliver_Stone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoldOut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TicketsAvailable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Walter_White"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Available"/>
+        <Class IRI="#Ticket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charity"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Games"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movies"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Party"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Popular"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sponsored"/>
+        <Class IRI="#Class"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Town"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unavailable"/>
+        <Class IRI="#Ticket"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Village"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volunteering"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food&amp;Drink"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Class"/>
+        <Class IRI="#Event"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#Organizator"/>
+        <Class IRI="#Ticket"/>
+        <Class IRI="#Visitor"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Visitor"/>
+        <NamedIndividual IRI="#Alexis_Evans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organizator"/>
+        <NamedIndividual IRI="#Alisher_Morgenstern"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#Dewsberry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#Drake_Night"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Games"/>
+        <NamedIndividual IRI="#Football_Game"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sports"/>
+        <NamedIndividual IRI="#Football_Game"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visitor"/>
+        <NamedIndividual IRI="#Harry_Huston"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#Huddersfield"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movies"/>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visitor"/>
+        <NamedIndividual IRI="#Jack_Russel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organizator"/>
+        <NamedIndividual IRI="#John_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Leeds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Manchester"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Music"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movies"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Music"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Party"/>
+        <NamedIndividual IRI="#NightClub_Party"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visitor"/>
+        <NamedIndividual IRI="#Oliver_Stone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unavailable"/>
+        <NamedIndividual IRI="#SoldOut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Available"/>
+        <NamedIndividual IRI="#TicketsAvailable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sports"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organizator"/>
+        <NamedIndividual IRI="#Walter_White"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Charity"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food&amp;Drink"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Drake_Night"/>
+        <NamedIndividual IRI="#Football_Game"/>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+        <NamedIndividual IRI="#NightClub_Party"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#GoesTo"/>
+        <NamedIndividual IRI="#Alexis_Evans"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#GoesTo"/>
+        <NamedIndividual IRI="#Alexis_Evans"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#Drake_Night"/>
+        <NamedIndividual IRI="#TicketsAvailable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#Drake_Night"/>
+        <NamedIndividual IRI="#Huddersfield"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#Drake_Night"/>
+        <NamedIndividual IRI="#Walter_White"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#Football_Game"/>
+        <NamedIndividual IRI="#TicketsAvailable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#Football_Game"/>
+        <NamedIndividual IRI="#Leeds"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#Football_Game"/>
+        <NamedIndividual IRI="#Walter_White"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#GoesTo"/>
+        <NamedIndividual IRI="#Harry_Huston"/>
+        <NamedIndividual IRI="#Drake_Night"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#GoesTo"/>
+        <NamedIndividual IRI="#Harry_Huston"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+        <NamedIndividual IRI="#SoldOut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+        <NamedIndividual IRI="#Leeds"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+        <NamedIndividual IRI="#John_Smith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#GoesTo"/>
+        <NamedIndividual IRI="#Jack_Russel"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+        <NamedIndividual IRI="#SoldOut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+        <NamedIndividual IRI="#Manchester"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+        <NamedIndividual IRI="#Alisher_Morgenstern"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+        <NamedIndividual IRI="#TicketsAvailable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+        <NamedIndividual IRI="#Huddersfield"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+        <NamedIndividual IRI="#Walter_White"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+        <NamedIndividual IRI="#TicketsAvailable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+        <NamedIndividual IRI="#Huddersfield"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+        <NamedIndividual IRI="#Alisher_Morgenstern"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#NightClub_Party"/>
+        <NamedIndividual IRI="#SoldOut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#NightClub_Party"/>
+        <NamedIndividual IRI="#Manchester"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#NightClub_Party"/>
+        <NamedIndividual IRI="#John_Smith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#GoesTo"/>
+        <NamedIndividual IRI="#Oliver_Stone"/>
+        <NamedIndividual IRI="#Football_Game"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#GoesTo"/>
+        <NamedIndividual IRI="#Oliver_Stone"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#GoesTo"/>
+        <NamedIndividual IRI="#Oliver_Stone"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+        <NamedIndividual IRI="#TicketsAvailable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+        <NamedIndividual IRI="#Dewsberry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+        <NamedIndividual IRI="#Walter_White"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+        <NamedIndividual IRI="#TicketsAvailable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+        <NamedIndividual IRI="#Huddersfield"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+        <NamedIndividual IRI="#John_Smith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#VisitedBy"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+        <NamedIndividual IRI="#Alexis_Evans"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#VisitorName"/>
+        <NamedIndividual IRI="#Alexis_Evans"/>
+        <Literal>Alexis Evans</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#OrganizatorName"/>
+        <NamedIndividual IRI="#Alisher_Morgenstern"/>
+        <Literal>Alisher Morgenstern</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationName"/>
+        <NamedIndividual IRI="#Dewsberry"/>
+        <Literal>Dewsberry Town</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#Drake_Night"/>
+        <Literal>28 April 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#Drake_Night"/>
+        <Literal>Free</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#Drake_Night"/>
+        <Literal>Drake Night Revolution</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#Football_Game"/>
+        <Literal>22 April 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#Football_Game"/>
+        <Literal>5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#Football_Game"/>
+        <Literal>5-a Side Football Game</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#VisitorName"/>
+        <NamedIndividual IRI="#Harry_Huston"/>
+        <Literal>Harry Huston</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationName"/>
+        <NamedIndividual IRI="#Huddersfield"/>
+        <Literal>Huddersfield Town</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+        <Literal>16 March 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+        <Literal>9.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#IronMan_Marathon"/>
+        <Literal>Iron Man Movie Marathon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#VisitorName"/>
+        <NamedIndividual IRI="#Jack_Russel"/>
+        <Literal>Jack Russel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#OrganizatorName"/>
+        <NamedIndividual IRI="#John_Smith"/>
+        <Literal>John Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#LocationName"/>
+        <NamedIndividual IRI="#Leeds"/>
+        <Literal>Leeds City</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+        <Literal>20 April 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+        <Literal>39.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#Morgenstern_Tour"/>
+        <Literal>Morgenstern Tour 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+        <Literal>01 May 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+        <Literal>Free</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#Movie_Night"/>
+        <Literal>Movie Night</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+        <Literal>28 April 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+        <Literal>19.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#Neverland2020"/>
+        <Literal>Neverland 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#NightClub_Party"/>
+        <Literal>20 March 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#NightClub_Party"/>
+        <Literal>Free</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#NightClub_Party"/>
+        <Literal>Closed Party Night Club</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#VisitorName"/>
+        <NamedIndividual IRI="#Oliver_Stone"/>
+        <Literal>Oliver Stone</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+        <Literal>01 May 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+        <Literal>Free</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#Volleyball_Game"/>
+        <Literal>Volleyball Game</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#OrganizatorName"/>
+        <NamedIndividual IRI="#Walter_White"/>
+        <Literal>Walter White</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventDate"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+        <Literal>22 March 2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+        <Literal>Free</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EventTitle"/>
+        <NamedIndividual IRI="#Free_Tea&amp;Cookies"/>
+        <Literal>Free Donation Charity Event</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#HasClass"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#LocatedAt"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#OrganizedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#VisitedBy"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#GoesTo"/>
+        <Class IRI="#Visitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasClass"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#VisitedBy"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ChecksTickets"/>
+        <Class IRI="#Ticket"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#GoesTo"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasClass"/>
+        <Class IRI="#Class"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#LocatedAt"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#OrganizedBy"/>
+        <Class IRI="#Organizator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#VisitedBy"/>
+        <Class IRI="#Visitor"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EventDate"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EventTitle"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LocationName"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#OrganizatorName"/>
+        <Class IRI="#Organizator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#VisitorName"/>
+        <Class IRI="#Visitor"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventTicketPrice"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EventTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LocationName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#OrganizatorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#VisitorName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>studEvents Search Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js">
+
+	</script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	crossorigin=""/>
+
+	<!-- Link to Leaflet's JavaScript -->
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+	integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+	crossorigin=""></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+
+	#map {
+			height: 600px;
+			width: 800px;
+	}
+
+	.info {
+			padding: 5px;
+			font: 14px Arial, Helvetica, sans-serif;
+			background: white;
+			background: rgba(255,255,255,0.9);
+			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			width:200px;
+			position:relative;
+			top:-200px;
+			left:20px;
+			z-index:1000;
+	}
+</style>
+
+</head>
+<body onload='searchEvent()'>
+<main>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<img src="images/logo.svg" alt="Logo" class="svg">
+	<a class="navbar-brand navbar-right" href="#">studEvents</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">Home/Browse</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="search.html">Search Events<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="favs.html">My Favorites</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+
+		<form class="form-inline my-2 my-lg-0 pt-3" id="order-date">
+			<input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+		</form>
+
+		<div id="info" class="row"></div>
+
+		<div id="map" style="display: none"></div>
+		</div>
+		</div>
+
+	</main>
+	<script src="js/search.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

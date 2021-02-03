@@ -1,0 +1,91 @@
+[
+	{
+		"id":1,
+		"title":"Movie Night",
+		"date":"28-04-2020",
+		"time":"18:00-22:00",
+    "location": "Huddersfield",
+    "description": "Student Union is organizing a movie night. Come have fun with us",
+    "img_url": "images/movie.jpg",
+		"category": ["Entertainment"],
+    "coordinates": [53.643746, -1.778896]
+	},
+  {
+    "id":2,
+    "title":"Disco Party",
+    "date":"30-04-2020",
+    "time":"23:00",
+    "location": "Huddersfield",
+    "description": "Disco Party at Revolution Club. Enjoy out 50% off prices to cocktails",
+    "img_url": "images/disco.jpg",
+		"category": ["Parties"],
+    "coordinates": [53.646408,-1.780297]
+  },
+  {
+    "id":3,
+    "title":"Be A Volunteer",
+    "date":"01-05-2020",
+    "time":"10:00",
+    "location": "Leeds",
+    "description": "We need volunteers for 1st May Marathon.",
+    "img_url": "images/vol.jpg",
+		"category": ["Volunteering"],
+    "coordinates": [53.796777,-1.544658]
+  },
+  {
+    "id":4,
+    "title":"Volleyball Match",
+    "date":"22-04-2020",
+    "time":"13:00",
+    "location": "Manchester",
+    "description": "Leeds University vs Manchester University Volleyball team. Free entry",
+    "img_url": "images/voley.jpg",
+		"category": ["Sport","Entertainment"],
+    "coordinates": [53.466939,-2.233862]
+  },
+  {
+    "id":5,
+    "title":"Laser Tag",
+    "date":"01-05-2020",
+    "time":"16:00",
+    "location": "Huddersfield",
+    "description": "Have fun with your friends or family at our Laser Tag event. Everyone is welcome, no age restriction.",
+    "img_url": "images/laser.jpg",
+		"category": ["Entertainment"],
+    "coordinates": [53.652917,-1.784656]
+  },
+  {
+    "id":6,
+    "title":"Football 5 a side",
+    "date":"02-05-2020",
+    "time":"12:00",
+    "location": "Leeds",
+    "description": "Organizing a 5-a-side football game. Everyone is welcome",
+    "img_url": "images/football.jpg",
+		"category": ["Entertainment","Sport"],
+    "coordinates": [53.798941,-1.552010]
+  },
+  {
+    "id":7,
+    "title":"Chess Tournament",
+    "date":"05-05-2020",
+    "time":"22:00",
+    "location": "Leeds",
+    "description": "Are you good at chess? Try yourself in our tournament. Main prize - £1000",
+    "img_url": "images/chess.jpg",
+		"category": ["Entertainment"],
+    "coordinates": [53.803724,-1.547412]
+  },
+  {
+    "id":8,
+    "title":"Night Party",
+    "date":"03-05-2020",
+    "time":"22:00",
+    "location": "Manchester",
+    "description": "Free shots on entry, famous DJ and lots of fun. We are waiting for you!",
+    "img_url": "images/night.jpg",
+		"category": ["Parties","Entertainment"],
+    "coordinates": [53.481049,-2.247377]
+  }
+
+]

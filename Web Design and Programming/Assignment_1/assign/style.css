@@ -1,0 +1,59 @@
+table {
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td {
+	padding: 6px;
+}
+
+label{
+	font-weight: normal;
+}
+
+.center-p {
+	text-align: center;
+}
+
+a {
+	color:#2E374C;
+	font-size: 16px;
+}
+
+.details-desc {
+	margin-top: 10px;
+	padding-top: 3px;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+
+.details-container{
+	margin-left: 67px;
+}
+
+.meal-items a:hover{
+	text-decoration: none;
+}
+
+.form-tick input{
+	font-size: 16px;
+}
+.form-tick label {
+	font-size: 16px;
+}
+
+.form-tick p {
+	margin-top: -10px;
+	font-size: 15px;
+}
+
+.meal-items .thumbnail:hover{
+	border: 2px solid #337ab7;
+}
+
+.img-diagram {
+	margin-bottom: 40px;
+	margin-top: 25px;
+}
+
+
